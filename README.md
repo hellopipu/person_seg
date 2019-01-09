@@ -1,5 +1,6 @@
-#Person Segmentation
-##Introduction
+# Person Segmentation
+
+## Introduction
 we implement two versions of the model,
 one of which is a real-time high-precision version on GPU platform and
  the other is a real-time version on CPU platform.
@@ -10,7 +11,7 @@ model    |   input size   | Val iou (Supervisely) |    Val iou (Whole)    | 
 Linknet_res18     | 640 | 88% | 78% | 100 (P40)  | 44 
 Unet++     |  256 | 56% | --- | 24 (CPU)   |  1.58 
 
-##Datasets
+## Datasets
 
   Dataset  |   Train   | Val 
 ---------|------------------------|------------------
@@ -21,7 +22,7 @@ Unet++     |  256 | 56% | --- | 24 (CPU)   |  1.58
 [VIP](http://www.sysu-hcp.net/lip/)     |  16702 | 1846 
 [TRIMODAL](https://www.kaggle.com/aalborguniversity/trimodal-people-segmentation)     |  5722 | 0 
 Total |  139777 | 8827 
-##Models
+## Models
 1). [Linknet](https://arxiv.org/abs/1707.03718)
 
 we use linknet_res18 as the model to implement the real-time high-precision version on GPU platform
@@ -35,7 +36,7 @@ while testing , we only keep X^00 , X^01 , X^10 to do the inference .
 
 ![unet++](doc/unet.jpg )
 
-##Demo
+## Demo
 
 simply run the command below to try the demo
 ```
