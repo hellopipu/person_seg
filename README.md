@@ -38,7 +38,7 @@ while testing , we only keep X^00 , X^01 , X^10 to do the inference .
 
 ## Demo
 
-simply run the command below to try the demo
+download the pretrained linknet model[[BaiduNet]](https://pan.baidu.com/s/1YuQUimdVwaqtNfElo7DstQ)(code: ftfe), and run the command below to try the demo
 ```
 python ./demo/demo.py 
 ```
